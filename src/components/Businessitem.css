@@ -1,0 +1,7 @@
+.listItem{
+    /* border: 1px solid #000; */
+    width: 600px;
+    background-color: rgb(238, 238, 238);
+    margin: 3px;
+    border-radius: 15px;
+}
