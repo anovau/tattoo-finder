@@ -4,7 +4,6 @@ import Button from '@mui/material/Button';
 import SearchIcon from '@mui/icons-material/Search';
 import "./Searchbar.css";
 import {useState} from "react";
-import { Link } from "react-router-dom";
 
 function Searchbar() {
 
@@ -32,9 +31,7 @@ function Searchbar() {
         value={valueCity}
         onChange={(event, newValue) => { setValueCity(newValue);  }}
       />
-      <Link to={`/resultspage?style=${valueStyle}&city=${valueCity}`}>
-      <Button variant="contained" color="secondary" startIcon={<SearchIcon/>} >Buscar</Button>
-      </Link>
+      <Button variant="contained" color="secondary" startIcon={<SearchIcon/>} href={`/resultspage?style=${valueStyle}&city=${valueCity}`} >Buscar</Button>
     </div>
   );
 }

@@ -10,15 +10,14 @@ function Resultspage() {
   let city = query.get("city");
   console.log(style, city);
 
-
-  const results = data.filter(artist => artist.styles?.includes(style) && artist.city == city )
+  const results = data.filter(artist => artist.styles?.includes(style) && artist.city === city )
 
     return (
         <>
         <Searchbar/>
         <div>
         {results.map((item) => (
-          <Businessitem name={item.name} address={item.address} score={item.score} url={item.placeId}/>
+          <Businessitem key={item.placeId} name={item.name} address={item.address} score={item.score} url={item.placeId}/>
         ))}
         </div>
       </>

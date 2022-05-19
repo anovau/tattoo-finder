@@ -12,6 +12,9 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
+import "../App.css";
+import { useAuth } from '../context/Authcontext';
 
 
 const pages = [
@@ -22,13 +25,19 @@ const pages = [
   {
   anchor:'Blog',
   link: "#" ,
-  }];
+  },
+  {
+  anchor:'Registrar Mi Negocio',
+  link: "/business-register" ,
+    }];
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
+  const {currentUser} = useAuth();
+  const { logout } = useAuth();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -137,11 +146,15 @@ function Header() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex' } }}>
+            { !currentUser ? <div><Link to='/login'>Login</Link>
+            <Link to='/signup'>Sign Up</Link></div> :
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
-            </Tooltip>
+            </Tooltip>}
+            </Box>
             <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"
@@ -158,11 +171,11 @@ function Header() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+              
+                <MenuItem onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center" onClick={logout}>Log Out</Typography>
                 </MenuItem>
-              ))}
+            
             </Menu>
           </Box>
         </Toolbar>

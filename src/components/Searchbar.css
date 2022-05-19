@@ -9,3 +9,6 @@
 .MuiButton {
     margin: 1rem;
 }
+.bar>Button {
+    height: 55px;
+}
