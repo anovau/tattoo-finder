@@ -1,3 +1,8 @@
+Para el correcto funcionamiento en modo desarrollo hay que acceder al siguiente link y activar el servicio de proxy.
+
+https://cors-anywhere.herokuapp.com/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
