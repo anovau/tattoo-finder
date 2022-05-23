@@ -1,0 +1,7 @@
+.nav-bar {
+  background-color: black;
+}
+.login-links a {
+  margin-left: 1rem;
+  color: white;
+}

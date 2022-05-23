@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/Authcontext';
 
@@ -56,7 +56,6 @@ const Signup = () => {
                     </svg>}
         <p>Do you already have an account? <Link to='/login'>Login</Link> </p>
       </div>
-
     </div>
     </div>
   )

@@ -1,9 +1,9 @@
-import Header from "./components/Header";
-import Home from "./components/Home";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
 import Resultspage from "./pages/resultspage";
-import Businessprofile from "./pages/Businessprofile";
+import Businessdetails from "./pages/Businessdetails/Businessdetails";
 import Businessregister from "./pages/Businessregister";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/resultspage" element={<Resultspage />} />
-            <Route path="/Businessprofile/:profileId" element={<Businessprofile />}/>
+            <Route path="/Businessdetails/:profileId" element={<Businessdetails />}/>
             <Route path="/Business-register" element={<PrivateRoute ><Businessregister /></PrivateRoute>}/>
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />

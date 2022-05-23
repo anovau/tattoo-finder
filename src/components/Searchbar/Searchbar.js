@@ -6,9 +6,7 @@ import "./Searchbar.css";
 import {useState} from "react";
 
 function Searchbar() {
-
   const [valueStyle, setValueStyle] = useState("Todos")
-
   const [valueCity, setValueCity] = useState("Toda España")
 
   return (

@@ -1,5 +1,7 @@
 import studiotattoo from "./images/studiotattoo.jpeg";
-import logiatatto from "./images/studiotattoo.jpeg";
+import logiatatto from "./images/logia-tattoo.png";
+import studioTattooWhite from "./images/studio-tattoo-white.jpeg";
+import tattooStudioGold from "./images/tattoo-studio-gold.jpeg";
 
 export const data = [
   {
@@ -7,7 +9,7 @@ export const data = [
     name: "Logia Tattoo",
     address: "Carrer de Tarragona, 84, 08015 Barcelona",
     score: 4.5,
-    logo: studiotattoo,
+    logo: logiatatto,
     city: "Barcelona",
     styles: [
       "Anime",
@@ -36,8 +38,8 @@ export const data = [
     placeId: "ChIJq4zoWHeipBIRkkVKEYWQZ4g",
     name: "Ondo Tattoo",
     address: "Carrer dels Morabos, 24, Local 2, 08004 Barcelona",
-    score: 4.6,
-    logo: logiatatto,
+    score: 4,
+    logo: studiotattoo,
     city: "Barcelona",
     styles: [
       "Color",
@@ -59,7 +61,7 @@ export const data = [
     name: "Family Art Tattoo",
     address: "Carrer del Regomir, 18-22, Local, 08002 Barcelona",
     score: 4.9,
-    logo: studiotattoo,
+    logo: studioTattooWhite,
     city: "Barcelona",
     styles: [
       "Anime",
@@ -82,7 +84,7 @@ export const data = [
     name: "Sacrifice Tattoo",
     address: "Avinguda de la Riera de Cassoles, 64, 08012 Barcelona",
     score: 4.8,
-    logo: logiatatto,
+    logo: tattooStudioGold,
     city: "Barcelona",
     styles: [
       "Japanese",
@@ -107,7 +109,7 @@ export const data = [
     name: "Eclipse Tattoo",
     address: "Carrer del Torrent de l'Olla, 53, 08012 Barcelona",
     score: 4.8,
-    logo: logiatatto,
+    logo: "",
     city: "Barcelona",
     styles: [
       "Anime",
@@ -224,8 +226,8 @@ export const data = [
     placeId: "ChIJPewP7fyipBIRSAI7SVN6UAU",
     name: "Barcelona Elèctric Tattoo",
     address: "Carrer del Portal Nou, 29, 08003 Barcelona",
-    score: 4.1,
-    logo: logiatatto,
+    score: 3.5,
+    logo: "",
     city: "Barcelona",
     styles: [
       "Anime",
@@ -282,7 +284,7 @@ export const data = [
     placeId: "ChIJmUEGm2EoQg0RyTXVfZ5ZyFI",
     name: "La Manuela Tattoo",
     address: "Calle del Divino Pastor, 8, 28004 Madrid",
-    score: 4.5,
+    score: 4.2,
     logo: logiatatto,
     city: "Madrid",
     styles: [
@@ -305,7 +307,7 @@ export const data = [
     name: "Mao & Cathy",
     address: "Corre. Alta de San Pablo, 6, 28004 Madrid",
     score: 4.6,
-    logo: logiatatto,
+    logo: "",
     city: "Madrid",
     styles: [
       "Anime",
@@ -374,8 +376,8 @@ export const data = [
     placeId: "ChIJ907GVIYoQg0RfwBl6iRZtGo",
     name: "Tattoo Magic",
     address: "C. de las Infantas, 8, 28004 Madrid",
-    score: 4.2,
-    logo: logiatatto,
+    score: 3.2,
+    logo: "",
     city: "Madrid",
     styles: [
       "Anime",

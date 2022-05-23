@@ -1,0 +1,18 @@
+.review-container {
+  background-color: rgb(238, 238, 238);
+  margin: 7px;
+  padding: 1rem;
+  width: 800px;
+  border-radius: 15px;
+}
+.user-review {
+  display: flex;
+}
+
+.user-review > img {
+  max-width: 75px;
+  margin: 0 15px 5px 0;
+}
+.user-review > p {
+  font-size: 18px;
+}

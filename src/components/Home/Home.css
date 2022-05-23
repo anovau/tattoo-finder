@@ -1,26 +1,32 @@
 .banner-home {
-  background-image: url(../images/banner-home.jpeg);
+  background-image: url(../../images/banner-home.jpeg);
   background-size: cover;
   height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-h1 {
+.banner-home > h1 {
   color: white;
   text-align: center;
   font-size: 60px;
-  /* margin-top: 150px; */
+  margin-top: 150px;
 }
 h2 {
   font-size: 30px;
 }
 h3 {
   position: absolute;
-  color: red;
+  color: white;
+  font-size: 30px;
   top: 50%;
   left: 50%;
-    
+  transform: translate(-50%, -50%);
+}
+.inspiration-image {
+  position: relative;
+  /* display: inline-block; */
+  text-align: center;
 }
 .searchbar-container {
   background-color: rgba(255, 255, 255, 0.7);
@@ -33,7 +39,7 @@ main {
 .inspiration {
   display: flex;
 }
-.inspiration>div>a>img {
+.inspiration > div > a > img {
   width: 400px;
   height: 500px;
   margin: 10px;
@@ -43,7 +49,7 @@ main {
   flex-direction: column;
   position: relative;
 }
-.inspiration>div>div>a>img {
+.inspiration > div > div > a > img {
   width: 400px;
   height: 245px;
   border-radius: 15px;

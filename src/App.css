@@ -1,71 +1,70 @@
 a:link, a:visited, a:active {
     text-decoration:none;
 }
-
 .card-container{
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-
-  .card {
-      margin-top: 5rem;
-    background-color: #ffff;
-    width: 400px;
-    height: 600px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.507);
-    border: solid 1px;
-    border-radius: 15px;
-  }
+.card {
+  margin-top: 5rem;
+  background-color: #ffff;
+  width: 400px;
+  height: 600px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.507);
+  border: solid 1px;
+  border-radius: 15px;
+}
+.card-header {
+  margin: 10px 0;
+  padding-top: 35px;
+}  
+.card-header>h1 {
+  color: black;
+}  
+input {
+  display: block;
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+  font-size: 20px;
+  padding: 0 0 0 10px;
+  border: solid 1px;
+  border-radius: 5px;
+}  
+input[type='submit'] {
+  color: white;
+  background-color: #BA000E;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.error {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: rgba(255, 0, 0, 0.658);
+  color: white;
+  font-size: bolder;
+}
+.logout-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 15px 10px;
+  margin: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.logout-button:hover {
+  background-color: rgba(238, 43, 43, 0.685)
+}
+.results{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 35px;
+}  
   
-  .card-header {
-    margin: 10px 0;
-  }
-  .card-header>h1 {
-    color: black;
-  }
-  
-  input {
-    display: block;
-    height: 45px;
-    width: 100%;
-    margin: 15px 0;
-    font-size: 20px;
-    padding: 0 0 0 10px;
-    border: solid 1px;
-    border-radius: 5px;
-  }
-  
-  input[type='submit'] {
-    color: white;
-    background-color: #BA000E;
-    margin-top: 30px;
-    cursor: pointer;
-    
-  }
-  
-  .error {
-    padding: 10px;
-    margin: 10px 0;
-    background-color: rgba(255, 0, 0, 0.658);
-    color: white;
-    font-size: bolder;
-  }
-  
-  .logout-button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 15px 10px;
-    margin: 20px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .logout-button:hover {
-    background-color: rgba(238, 43, 43, 0.685)
-  }
   

@@ -13,9 +13,9 @@ import MenuItem from '@mui/material/MenuItem';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import "../App.css";
-import { useAuth } from '../context/Authcontext';
-
+import "../../App.css";
+import "./Header.css";
+import { useAuth } from '../../context/Authcontext';
 
 const pages = [
   {
@@ -30,8 +30,6 @@ const pages = [
   anchor:'Registrar Mi Negocio',
   link: "/business-register" ,
     }];
-
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -53,7 +51,6 @@ function Header() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-
 
     return (
       <AppBar position="static" className="nav-bar">
@@ -144,11 +141,13 @@ function Header() {
               </Button></a>
             ))}
           </Box>
-
           <Box sx={{ flexGrow: 0 }}>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex' } }}>
-            { !currentUser ? <div><Link to='/login'>Login</Link>
-            <Link to='/signup'>Sign Up</Link></div> :
+            { !currentUser ? 
+              <div className="login-links">
+                <Link to='/login'>Login</Link>
+                <Link to='/signup'>Sign Up</Link>
+              </div> :
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -171,11 +170,9 @@ function Header() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              
                 <MenuItem onClick={handleCloseUserMenu}>
                   <Typography textAlign="center" onClick={logout}>Log Out</Typography>
                 </MenuItem>
-            
             </Menu>
           </Box>
         </Toolbar>
